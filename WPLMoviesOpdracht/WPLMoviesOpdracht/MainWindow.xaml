@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:WPLMoviesOpdracht"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#58A518">
-    <Grid>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/assets/logo_pxl_digital.png" Margin="10"/>
+            
+        </Grid>
         
     </Grid>
 </Window>
