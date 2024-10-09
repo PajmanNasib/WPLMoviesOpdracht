@@ -35,12 +35,19 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <Image Source="/assets/dune2.jpg"/>
-            <Image Source="/assets/furiosa.jpg" Grid.Column="1"/>
-            <Image Source="/assets/thesubstance.jpg" Grid.Column="2"/>
+            <Button Name="DuneBtn" MouseDoubleClick="DuneBtn_MouseDoubleClick" Background="{x:Null}" BorderThickness="0" FocusVisualStyle="{x:Null}">
+                <Image Source="/assets/dune2.jpg"/>
+            </Button>
 
+            <Button Name="FuriosaBtn" Grid.Column="1" MouseDoubleClick="FuriosaBtn_MouseDoubleClick" Background="{x:Null}" BorderThickness="0" FocusVisualStyle="{x:Null}">
+                <Image Source="/assets/furiosa.jpg" />
+            </Button>
 
-
+            <Button Name="lastOneBtn" Grid.Column="2" MouseDoubleClick="lastOneBtn_MouseDoubleClick" Background="{x:Null}" BorderThickness="0" FocusVisualStyle="{x:Null}">
+                <Image Source="/assets/thesubstance.jpg" Grid.Column="2"/>
+            </Button>
         </Grid>
+
+        <TextBlock Name="ResultTxt" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="20 0"/>
     </Grid>
 </Window>
